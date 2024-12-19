@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Baloo Thambi 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('./image/background-blue.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    padding: 5rem 10rem;
+}
+
+section h2 {
+    font-size: 3.5em;
+    font-weight: bolder;
+    padding: 0.2em;
+}
+
+/* Header Nav */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 5em;
+}
+
+header a {
+    text-decoration: none;
+    color: #39ADF0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #8988F9; 
+}
+
+nav {
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav .nav-link {
+    text-decoration: none;
+    color: #39ADF0;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav .nav-link:hover {
+    color: #8988F9; 
+}
+
+/* HomeSection */
+.home {
+    background-color: rgba(255, 255, 255, 0.29);
+    padding: 6em 5em;
+    margin: 4em 5em 6em 5em;
+    border-radius: 10px;
+}
+
+.home h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #8988F9;
+}
+
+.home h1 {
+    font-size: 4.5em;
+    font-weight: bold;
+    color: #5466af;
+}
+
+/* Project Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.projects h2 {
+    color: #5466af;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 3em 2.5em;
+    margin-bottom: 4em;
+}
+
+.project .project-nama {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.project .project-nama img {
+    width: 5em;
+    height: 5em;
+    object-fit: contain;
+}
+
+.project .project-nama h3 {
+    font-size: 2em;
+    margin-right: 1em;
+    font-weight: 600;
+    align-content: center;
+}
+
+.project figure {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.project figure img {
+    width: 21.5em;
+    height: 15em;
+    object-fit: contain;
+}
+
+.project a {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #8988F9;
+}
+
+/* Experien Sect */
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.experience h2 {
+    color:#5466af;
+}
+
+.experience article {
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2em;
+    width: 50em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.experience article h4 {
+    background-color: #8988F9;
+    width: max-content;
+    font-size: 1.5em;
+    padding: 0 0.5em;
+    color: white;
+    border-radius: 10px;
+}
+
+.experience article h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.experience article p {
+    color: #333;
+}
+
+/* Contact Sectionn */
+.contact {
+    background-color: #39adf06a;
+}
+
+.contact h2 {
+    font-size: 5em;
+}
+
+.contact .contact-info {
+    margin: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.contact .contact-info img {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.contact-list {
+    align-self: center;
+}
+
+.contact-list li {
+    list-style: none;
+    font-size: 1.5em;
+    padding: 0.2em 0;
+}
+
+footer {
+    background: #39adf06a;
+    color: #5767a5;
+    text-align: center;
+    padding: 1rem 0;
+}
